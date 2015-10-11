@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "FASlideView"
-  s.version          = "0.1.0"
+  s.version          = "0.0.1"
   s.summary          = "A short description of FASlideView."
   s.description      = <<-DESC
                        An optional longer description of FASlideView
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Softshag & Me" => "admin@softshag.dk" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/FASlideView.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/FASlideView.git", :tag => 'v' + s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '8.0'
