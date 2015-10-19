@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		40D11CFBD4584CE44A33BB12 /* Pods_FASlideView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1106D8993E46EA0E62077D7D /* Pods_FASlideView_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		40D11CFBD4584CE44A33BB12 /* Pods_FASlideView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1106D8993E46EA0E62077D7D /* Pods_FASlideView_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		E555741386478C7998E13945 /* Pods_FASlideView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973F6A2DB8B534F13774E214 /* Pods_FASlideView_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E555741386478C7998E13945 /* Pods_FASlideView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973F6A2DB8B534F13774E214 /* Pods_FASlideView_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -209,6 +209,8 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {

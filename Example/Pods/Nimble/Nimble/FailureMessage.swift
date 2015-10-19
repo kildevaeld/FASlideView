@@ -1,6 +1,6 @@
 import Foundation
 
-@objc
+
 public class FailureMessage {
     public var expected: String = "expected"
     public var actualValue: String? = "" // empty string -> use default; nil -> exclude
@@ -16,9 +16,9 @@ public class FailureMessage {
         if let actualValue = actualValue {
             value = "\(expected) \(to) \(postfixMessage), got \(actualValue)\(postfixActual)"
         }
-        var lines: [String] = (value as NSString).componentsSeparatedByString("\n") as! [String]
+        var lines: [String] = (value as NSString).componentsSeparatedByString("\n") 
         let whitespace = NSCharacterSet.whitespaceAndNewlineCharacterSet()
         lines = lines.map { line in line.stringByTrimmingCharactersInSet(whitespace) }
-        return "".join(lines)
+        return lines.joinWithSeparator("")
     }
 }

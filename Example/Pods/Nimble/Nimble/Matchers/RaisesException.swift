@@ -12,7 +12,7 @@ internal func raiseExceptionMatcher(matches: (NSException?, SourceLocation) -> R
         failureMessage.actualValue = nil
 
         var exception: NSException?
-        var capture = NMBExceptionCapture(handler: ({ e in
+        let capture = NMBExceptionCapture(handler: ({ e in
             exception = e
         }), finally: nil)
 
@@ -97,24 +97,24 @@ public func raiseException(
 
 /// A Nimble matcher that succeeds when the actual expression raises an exception with
 /// the specified name, reason, and userInfo.
-public func raiseException(#named: String, #reason: String, #userInfo: NSDictionary) -> MatcherFunc<Any> {
-    return raiseException(named: equal(named), reason: equal(reason), userInfo: equal(userInfo))
+public func raiseException(named named: String, reason: String, userInfo: NSDictionary) -> MatcherFunc<Any> {
+    return raiseException(equal(named), reason: equal(reason), userInfo: equal(userInfo))
 }
 
 /// A Nimble matcher that succeeds when the actual expression raises an exception with
 /// the specified name and reason.
-public func raiseException(#named: String, #reason: String) -> MatcherFunc<Any> {
+public func raiseException(named named: String, reason: String) -> MatcherFunc<Any> {
     return raiseException(named: equal(named), reason: equal(reason))
 }
 
 
 /// A Nimble matcher that succeeds when the actual expression raises an exception with
 /// the specified name.
-public func raiseException(#named: String) -> MatcherFunc<Any> {
+public func raiseException(named named: String) -> MatcherFunc<Any> {
     return raiseException(named: equal(named))
 }
 
-@objc public class NMBObjCRaiseExceptionMatcher : NMBMatcher {
+public class NMBObjCRaiseExceptionMatcher : NMBMatcher {
     var _name: String?
     var _reason: String?
     var _userInfo: NSDictionary?

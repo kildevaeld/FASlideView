@@ -1,6 +1,0 @@
-framework module FASlideView {
-  umbrella header "Pods-FASlideView_Example-FASlideView-umbrella.h"
-
-  export *
-  module * { export * }
-}

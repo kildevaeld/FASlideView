@@ -64,10 +64,7 @@ public class FASlideView : UIView {
     } else if self.currentView! === self.defaultView {
       return
     }
-    
-    let view = self.currentView == nil ? self : self.currentView!
-    
-    
+
     self.dataSource?.slideView(self, didTouchView: self.currentView!, atIndex: currentIndex - 1)
   }
   
@@ -142,7 +139,7 @@ public class FASlideView : UIView {
         
         view.frame = self.bounds
         
-        if self.currentView == nil {
+        if self.currentView != nil {
             clear()
             self.addSubview(view)
             self.currentView = view

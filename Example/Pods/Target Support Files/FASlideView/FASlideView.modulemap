@@ -1,0 +1,6 @@
+framework module FASlideView {
+  umbrella header "FASlideView-umbrella.h"
+
+  export *
+  module * { export * }
+}
